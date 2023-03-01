@@ -26,15 +26,9 @@
             array_push($Member_arr['Member'],$Member_item);
 
         }
-        file_put_contents('db.json', json_encode($Member_arr));
-        if(move_uploaded_file('db.json', 'DIKO%20Page/deployjson/')){
-           
-            echo 'ok.';
 
-        }
-        else{
-            echo 'nope';
-        }
+        file_put_contents('../../../db.json', json_encode($Member_arr));
+       
     }else
     {
         echo json_encode(array('Message'=>'no Member'));
