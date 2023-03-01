@@ -33,4 +33,5 @@
     {
         echo json_encode(array('Message'=>'no Member'));
     }
+    include '../../../db.json';
 ?>
